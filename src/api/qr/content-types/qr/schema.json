@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "qrs",
+  "info": {
+    "singularName": "qr",
+    "pluralName": "qrs",
+    "displayName": "QR",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "short_link": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "qr_image_url": {
+      "type": "text"
+    },
+    "redirect_to": {
+      "type": "text"
+    },
+    "type": {
+      "type": "integer",
+      "max": 1
+    },
+    "item_id": {
+      "type": "integer",
+      "max": 1
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "surveys",
+  "info": {
+    "singularName": "survey",
+    "pluralName": "surveys",
+    "displayName": "Survey",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "surveys"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "surveys"
+    }
+  }
+}
