@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "short_link": {
+    "short_url": {
       "type": "string",
       "required": true,
       "unique": true
@@ -20,16 +20,19 @@
     "qr_image_url": {
       "type": "text"
     },
-    "redirect_to": {
+    "long_url": {
       "type": "text"
     },
     "type": {
-      "type": "integer",
-      "max": 1
+      "type": "integer"
     },
     "item_id": {
-      "type": "integer",
-      "max": 1
+      "type": "integer"
+    },
+    "url_id": {
+      "type": "text",
+      "unique": true,
+      "required": true
     }
   }
 }
